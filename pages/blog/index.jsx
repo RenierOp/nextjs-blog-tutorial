@@ -3,7 +3,9 @@ import Link from "next/link";
 
 export default function index({ data }) {
   return (
-    <Layout>
+    <Layout title="Blogs | Next.js"
+    description="This is the page you're looking for. You can find it in our docs."
+    home>
       <h1>Lista de blogs</h1>
       {data.map(({ id, title, body }) => (
         <div key={id}>
